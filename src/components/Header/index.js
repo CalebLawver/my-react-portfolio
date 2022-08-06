@@ -43,7 +43,7 @@ function Header() {
         setCurrentPage={setCurrentPage}
       />
       </nav>
-      <main className='m-0 p-0'>
+      <main className='w-100 p-0'>
         <div>{clickedPage(currentPage)}</div>
       </main>
     </div>

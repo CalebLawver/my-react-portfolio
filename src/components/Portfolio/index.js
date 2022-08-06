@@ -71,7 +71,7 @@ function Portfolio() {
 
     return (
         <div className='d-flex flex-wrap justify-content-center'>
-            <section className='p-4'>
+            <section className=''>
                 <h1 className='p-4 text-center'>My Projects</h1>
                 <hr />
                 <Project projects={projects}/>

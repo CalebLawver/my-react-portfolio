@@ -34,29 +34,31 @@ function Contact() {
   };
 
   return (
-    <div className='d-flex flex-wrap justify-content-center row'>
-      <h1 data-testid="h1tag">Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-        </div>
-        {errorMessage && (
+    <section className='container d-flex flex-wrap justify-content-center'>
+        <h1 className='text-center'>Contact me</h1>
+        <hr/>
+        <form id="contact-form" onSubmit={handleSubmit} className='d-flex flex-column justify-content-center col-12'>
           <div>
-            <p className="error-text">{errorMessage}</p>
+            <label htmlFor="name">Name:</label>
+            <input type="text" name="Name" defaultValue={name} onBlur={handleChange} className='col-12'/>
           </div>
-        )}
-        <button data-testid="button" type="submit">Submit</button>
-      </form>
-    </div>
+          <div>
+            <label htmlFor="email">Email address:</label>
+            <input type="email" name="email" defaultValue={email} onBlur={handleChange} className='col-12'/>
+          </div>
+          <div>
+            <label htmlFor="message">Message:</label>
+            <textarea name="Message" rows="5" defaultValue={message} onBlur={handleChange} className='col-12'/>
+          </div>
+          {errorMessage && (
+            <div>
+              <p className="error-text">{errorMessage}</p>
+            </div>
+          )}
+          <button data-testid="button" type="submit">Submit</button>
+        </form>
+    </section>
+    
   );
 }
 
