@@ -21,29 +21,28 @@ function Header() {
             case 'Resume':
                 return <Resume />;
             default:
-                return <Contact />;
+                return <About />;
         }
     }
 
     return (
         <div>
-      <nav>
-        <div>
+      <nav className='navbar'>
+        <div className='navbar-brand justify-content-center p-2'>
           <a
+            className='navbar-item'
             rel="noreferrer"
             target="_blank"
-            href="/"
+            href="https://github.com/CalebLawver"
           >
-            <span className="text-light">Caleb Lawver</span>
+            <h2 className="text-light font-weight-bold">Caleb Lawver</h2>
           </a>
         </div>
-      </nav>
-     
-      <Nav
+        <Nav
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
       />
-
+      </nav>
       <main>
         <div>{clickedPage(currentPage)}</div>
       </main>
