@@ -34,7 +34,7 @@ function Contact() {
   };
 
   return (
-    <section>
+    <div className='d-flex flex-wrap justify-content-center row'>
       <h1 data-testid="h1tag">Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
@@ -56,7 +56,7 @@ function Contact() {
         )}
         <button data-testid="button" type="submit">Submit</button>
       </form>
-    </section>
+    </div>
   );
 }
 

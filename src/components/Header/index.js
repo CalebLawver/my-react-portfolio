@@ -26,7 +26,7 @@ function Header() {
     }
 
     return (
-        <div>
+    <div className='d-flex flex-wrap justify-content-center'>
       <nav className='navbar'>
         <div className='navbar-brand justify-content-center p-2'>
           <a
@@ -43,7 +43,7 @@ function Header() {
         setCurrentPage={setCurrentPage}
       />
       </nav>
-      <main>
+      <main className='m-0 p-0'>
         <div>{clickedPage(currentPage)}</div>
       </main>
     </div>
