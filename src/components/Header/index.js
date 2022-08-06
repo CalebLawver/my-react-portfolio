@@ -28,7 +28,7 @@ function Header() {
     return (
     <div className='d-flex flex-wrap justify-content-center'>
       <nav className='navbar'>
-        <div className='navbar-brand justify-content-center p-2'>
+        <div className='navbar-brand p-2'>
           <a
             className='navbar-item'
             rel="noreferrer"
