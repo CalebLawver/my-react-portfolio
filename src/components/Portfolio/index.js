@@ -29,8 +29,8 @@ function Portfolio() {
         },
         {
             id: 3,
-            title: final,
-            img: '/assets/emp-trackert.JPG',
+            title: 'Final Project',
+            img: final,
             desc: '',
             liveSite: '/',
             gitHub: '/'
