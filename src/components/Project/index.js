@@ -16,10 +16,10 @@ function Project(props) {
                                 <p className='card-text text-center'>{project.desc}</p>
                                 <div className='row'>
                                     <div className='col-6 text-center'>
-                                        <a href={project.gitHub} target="_blank" rel="noreferrer">GitHub</a>
+                                        <a href={project.gitHub} className='badge badge-primary' target="_blank" rel="noreferrer">GitHub</a>
                                     </div>
                                     <div className='col-6 text-center'>
-                                        <a href={project.liveSite} target="_blank" rel="noreferrer">Website</a>
+                                        <a href={project.liveSite} className='badge badge-primary' target="_blank" rel="noreferrer">Website</a>
                                     </div>
                                 </div>
                             </div>
