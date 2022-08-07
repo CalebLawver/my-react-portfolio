@@ -1,4 +1,5 @@
 import React from 'react';
+import Pic from '../../assets/me';
 
 function About() {
     return (
@@ -19,7 +20,7 @@ function About() {
                         </p>
                     </div>
                     <div className='img-responsive row-lg-3 mb-2 text-center'>
-                        <img src="/assets/me.jpg" alt="Caleb Lawver"/>
+                        <img src={Pic} alt="Caleb Lawver"/>
                     </div>
                 </div>
             </div>

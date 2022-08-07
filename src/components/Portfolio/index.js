@@ -1,12 +1,20 @@
 import React from 'react';
 import Project from '../Project';
+import BitTrail from '../../assets/bit-trail.JPG';
+import national from '../../assets/national-mapper.JPG';
+import final from '../../assets/emp-trackert.JPG';
+import run from '../../assets/run-buddy.JPG';
+import password from '../../assets/run-buddy.JPG';
+import zoo from '../../assets/zoo.JPG';
+import budget from '../../assets/budget.JPG';
+import note from '../../assets/note.JPG';
 
 function Portfolio() {
     const projects = [
         {
             id: 1,
             title: 'Bit Trail',
-            img: '/assets/bit-trail.JPG',
+            img: BitTrail,
             desc: 'Web app that utilizes Handlebars.js, MySQL, and RESTful APIs. This app allows users to post hikes and share info with logged in users.',
             liveSite: 'https://bit-trail.herokuapp.com/',
             gitHub: 'https://github.com/CalebLawver/Bit-Trail'
@@ -14,14 +22,14 @@ function Portfolio() {
         {
             id: 2,
             title: 'National Mapper',
-            img: '/assets/national-mapper.JPG',
+            img: national,
             desc: 'We created a page that uses the National Park Service API and the CSS framework PicoCSS to show users a list of national parks in a specific state.',
             liveSite: 'https://jacee94.github.io/national-mapper/',
             gitHub: 'https://github.com/Jacee94/national-mapper'
         },
         {
             id: 3,
-            title: 'Final Project',
+            title: final,
             img: '/assets/emp-trackert.JPG',
             desc: '',
             liveSite: '/',
@@ -30,7 +38,7 @@ function Portfolio() {
         {
             id: 4,
             title: 'Run Buddy',
-            img: '/assets/run-buddy.JPG',
+            img: run,
             desc: 'My first website! Created with just HTML and CSS. This offers fitness training services.',
             liveSite: 'https://caleblawver.github.io/run-buddy/',
             gitHub: 'https://github.com/CalebLawver/run-buddy'
@@ -38,7 +46,7 @@ function Portfolio() {
         {
             id: 5,
             title: 'Password Generator',
-            img: '/assets/password-gen.JPG',
+            img: password,
             desc: 'This application generates a random password based on user-selected criteria. It runs in the browser and dynamically updates the HTML and CSS with the power of JavaScript.',
             liveSite: 'https://caleblawver.github.io/Password-Generator/',
             gitHub: 'https://github.com/CalebLawver/Password-Generator'
@@ -46,7 +54,7 @@ function Portfolio() {
         {
             id: 6,
             title: 'Zoo Keepr',
-            img: '/assets/zoo.JPG',
+            img: zoo,
             desc: 'Utilizing Express.js, this website allows you to create a list of animals and show them to the public.',
             liveSite: 'https://frozen-bayou-44761.herokuapp.com/',
             gitHub: 'https://github.com/CalebLawver/zookeepr'
@@ -54,7 +62,7 @@ function Portfolio() {
         {
             id: 7,
             title: 'Budget PWA',
-            img: '/assets/budget.JPG',
+            img: budget,
             desc: 'This Progressive Web App allows users to track their money, both on and offline.',
             liveSite: 'https://mysterious-hollows-72686.herokuapp.com/',
             gitHub: 'https://github.com/CalebLawver/Budget-PWA'
@@ -62,7 +70,7 @@ function Portfolio() {
         {
             id: 8,
             title: 'Note Taker',
-            img: '/assets/note.JPG',
+            img: note,
             desc: 'An app that uses express.js to track, edit, and delete notes. It dynamically creates the data stored in an json file.',
             liveSite: 'https://dry-escarpment-02911.herokuapp.com/',
             gitHub: 'https://github.com/CalebLawver/note-taker'
