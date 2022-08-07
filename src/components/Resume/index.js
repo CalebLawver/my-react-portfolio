@@ -9,8 +9,8 @@ function Resume() {
             <hr />
             <div className='d-flex flex-wrap justify-content-center bg-dark'>
                 <div className='text-light bg-secondary col p-3 m-3 row-6'>
-                    <h3>Front-end</h3>
-                    <ul>
+                    <h3 className='text-center'>Front-end</h3>
+                    <ul className='text-left text-align-left'>
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>Bootstrap</li>
@@ -20,8 +20,8 @@ function Resume() {
                     </ul>
                 </div>
                 <div className='text-light bg-secondary col p-3 m-3 row-6'>
-                    <h3>Back-end</h3>
-                    <ul>
+                    <h3 className='text-center'>Back-end</h3>
+                    <ul className='text-left'>
                         <li>RESTful APIs</li>
                         <li>Creating APIs</li>
                         <li>Node.js</li>

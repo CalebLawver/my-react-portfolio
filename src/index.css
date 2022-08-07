@@ -297,7 +297,3 @@ a {
 .navActive {
   color: var(--secondary);
 }
-
-.tanner {
-  box-shadow: var(--darker);
-}
