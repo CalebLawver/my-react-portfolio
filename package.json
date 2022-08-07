@@ -1,6 +1,6 @@
 {
-  "homepage": "http://caleblawver.github.io/React-Portfolio",
-  "name": "react-portfolio",
+  "homepage": "http://caleblawver.github.io/my-react-portfolio",
+  "name": "my-react-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
