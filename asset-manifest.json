@@ -1,15 +1,23 @@
 {
   "files": {
     "main.css": "/my-react-portfolio/static/css/main.0d243924.css",
-    "main.js": "/my-react-portfolio/static/js/main.68900ba6.js",
+    "main.js": "/my-react-portfolio/static/js/main.9b2d6a77.js",
     "static/js/787.56d9acf9.chunk.js": "/my-react-portfolio/static/js/787.56d9acf9.chunk.js",
+    "static/media/national-mapper.JPG": "/my-react-portfolio/static/media/national-mapper.6ff1b4d571b6f08afe28.JPG",
+    "static/media/bit-trail.JPG": "/my-react-portfolio/static/media/bit-trail.9c05617080f0e24de5b7.JPG",
+    "static/media/zoo.JPG": "/my-react-portfolio/static/media/zoo.f843417284917024046c.JPG",
+    "static/media/run-buddy.JPG": "/my-react-portfolio/static/media/run-buddy.015ec371b83c9392e64c.JPG",
+    "static/media/budget.JPG": "/my-react-portfolio/static/media/budget.49e89df3aa54509c41b6.JPG",
+    "static/media/me.jpg": "/my-react-portfolio/static/media/me.ad5dc516a025a73fd2aa.jpg",
+    "static/media/note.JPG": "/my-react-portfolio/static/media/note.d11300f32d845709fead.JPG",
+    "static/media/emp-trackert.JPG": "/my-react-portfolio/static/media/emp-trackert.2053967a9a14646d56b3.JPG",
     "index.html": "/my-react-portfolio/index.html",
     "main.0d243924.css.map": "/my-react-portfolio/static/css/main.0d243924.css.map",
-    "main.68900ba6.js.map": "/my-react-portfolio/static/js/main.68900ba6.js.map",
+    "main.9b2d6a77.js.map": "/my-react-portfolio/static/js/main.9b2d6a77.js.map",
     "787.56d9acf9.chunk.js.map": "/my-react-portfolio/static/js/787.56d9acf9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0d243924.css",
-    "static/js/main.68900ba6.js"
+    "static/js/main.9b2d6a77.js"
   ]
 }
