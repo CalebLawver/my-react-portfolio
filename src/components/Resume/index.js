@@ -4,9 +4,10 @@ function Resume() {
     return (
         <div className='container d-flex flex-wrap justify-content-center'>
             <div className='col-12'>
-                <h2 className='text-center'>Resume</h2>
+                <h2 className='text-center p-4'>Resume</h2>
             </div>
-            <div className='d-flex flex-wrap justify-content-center'>
+            <hr />
+            <div className='d-flex flex-wrap justify-content-center bg-dark'>
                 <div className='text-light bg-secondary col p-3 m-3 row-6'>
                     <h3>Front-end</h3>
                     <ul>
@@ -29,14 +30,15 @@ function Resume() {
                         <li>MongoDB</li>
                     </ul>
                 </div>
+                <div className='col-12 text-center'>
+                    <p>Download a copy of my {''}<a 
+                    href='https://docs.google.com/document/d/1FFSnwuTOUCf4TN2G02PkxvWw4yH8D40F'
+                    target='_blank'
+                    rel='noreferrer'
+                    >resume</a>.</p>
+                </div>
             </div>
-            <div className='col-12 text-center'>
-                <p>Download a copy of my {''}<a 
-                href='https://docs.google.com/document/d/1FFSnwuTOUCf4TN2G02PkxvWw4yH8D40F'
-                target='_blank'
-                rel='noreferrer'
-                >resume</a>.</p>
-            </div>
+            
         </div>
     )
 }
