@@ -12,7 +12,15 @@ import note from '../../assets/note.JPG';
 function Portfolio() {
     const projects = [
         {
-            id: 3,
+            id: 1,
+            title: 'World Wide Jerky',
+            img: final,
+            desc: 'This is an ecommerce website built to sell jerky to loyal customers! Full of a login and profile page where you can see your order history.',
+            liveSite: 'https://worldwidejerky.herokuapp.com/',
+            gitHub: 'https://github.com/mjzabriskie/world-wide-jerky'
+        },
+        {
+            id: 2,
             title: 'Bit Trail',
             img: BitTrail,
             desc: 'Web app that utilizes Handlebars.js, MySQL, and RESTful APIs. This app allows users to post hikes and share info with logged in users.',
@@ -20,20 +28,12 @@ function Portfolio() {
             gitHub: 'https://github.com/CalebLawver/Bit-Trail'
         },
         {
-            id: 2,
+            id: 3,
             title: 'National Mapper',
             img: national,
             desc: 'We created a page that uses the National Park Service API and the CSS framework PicoCSS to show users a list of national parks in a specific state.',
             liveSite: 'https://jacee94.github.io/national-mapper/',
             gitHub: 'https://github.com/Jacee94/national-mapper'
-        },
-        {
-            id: 1,
-            title: 'World Wide Jerky',
-            img: final,
-            desc: 'This is an ecommerce website built to sell jerky to loyal customers! Full of a login and profile page where you can see your order history.',
-            liveSite: 'https://worldwidejerky.herokuapp.com/',
-            gitHub: 'https://github.com/mjzabriskie/world-wide-jerky'
         },
         {
             id: 4,
