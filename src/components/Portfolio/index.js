@@ -2,7 +2,7 @@ import React from 'react';
 import Project from '../Project';
 import BitTrail from '../../assets/bit-trail.JPG';
 import national from '../../assets/national-mapper.JPG';
-import final from '../../assets/emp-trackert.JPG';
+import final from '../../assets/wwj.JPG';
 import run from '../../assets/run-buddy.JPG';
 import password from '../../assets/run-buddy.JPG';
 import zoo from '../../assets/zoo.JPG';
