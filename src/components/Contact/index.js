@@ -1,67 +1,57 @@
-import React, { useState } from 'react';
-
-import { validateEmail } from '../../utils/helper';
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
+import Modal from "react-bootstrap/Modal";
+import './style.css'
 
 function Contact() {
-  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    const [modalText, setModalText] = useState('');
+    const [openMessageModal, setOpenMessageModal] = useState(false);
 
-  const [errorMessage, setErrorMessage] = useState('');
-  const { name, email, message } = formState;
+    const handleModalClose = () => setOpenMessageModal(false);
+    const handleModalShow = () => setOpenMessageModal(true);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!errorMessage) {
-      setFormState({ [e.target.name]: e.target.value });
-      console.log('Form', formState);
-    }
-  };
+    function sendEmail(e) {
+        e.preventDefault();
 
-  const handleChange = (e) => {
-    if (e.target.name === 'email') {
-      const isValid = validateEmail(e.target.value);
-      if (!isValid) {
-        setErrorMessage('Your email is invalid.');
-      } else {
-        setErrorMessage('');
-      }
-    } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
-      } else {
-        setErrorMessage('');
-      }
-    }
-  };
+        // These environment variables require input from a free emailjs acocunt at emailjs.com
+        emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, e.target, process.env.REACT_APP_YOUR_PUBLIC_KEY)
+            .then((result) => {
+                setModalText('Your email has been successfully sent.');
+                handleModalShow();
+            }, (error) => {
+                setModalText('There was an error.');
+                handleModalShow();
+            });
+    };
 
-  return (
-    <div className='flex-wrap justify-content-center'>
-      <div className='container'>
-        <div className='row'>
-          <h1 className='text-center p-4'>Contact me</h1><hr></hr>
-            <form id="contact-form" onSubmit={handleSubmit} className='d-flex flex-column justify-content-center'>
-              <div>
-                <label htmlFor="name">Name:</label>
-                <input type="text" name="Name" defaultValue={name} onBlur={handleChange} className='col-12'/>
-              </div>
-              <div>
-                <label htmlFor="email">Email address:</label>
-                <input type="email" name="email" defaultValue={email} onBlur={handleChange} className='col-12'/>
-              </div>
-              <div>
-                <label htmlFor="message">Message:</label>
-                <textarea name="Message" rows="5" defaultValue={message} onBlur={handleChange} className='col-12'/>
-              </div>
-              {errorMessage && (
-                <div>
-                  <p className="error-text">{errorMessage}</p>
+    return (
+        <div className="container my-4">
+            <div className="mt-2 mb-2 rounded w-90 mx-auto" id="contact">
+                <div className="row m-0">
+                    <div className="col-md-8 mx-auto contact-2">
+                        <h2>Contact Us</h2>
+                        <form className="" onSubmit={sendEmail} method="POST">
+                            <label htmlFor="name">Name</label>
+                            <input className="form-control rounded" type="text" name="name" required />
+                            <label htmlFor="email">Email Address</label>
+                            <input className="form-control rounded" type="email" name="email" required />
+                            <label htmlFor="message">Message</label>
+                            <textarea rows='8' className="form-control rounded" type="text" name="message" required />
+                            <button className="btn btnForm rounded my-1" type="submit">SEND EMAIL</button>
+                        </form>
+                    </div>
                 </div>
-              )}
-              <button type="submit" className='btn btn-dark'>Submit</button>
-          </form>
+                <Modal show={openMessageModal} onHide={handleModalClose}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Message Sent</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <p id="message-result">{modalText}</p>
+                    </Modal.Body>
+                </Modal>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    )
 }
 
 export default Contact;
